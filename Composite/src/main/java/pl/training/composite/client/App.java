@@ -17,9 +17,10 @@ public class App {
         firm.add(testers);
 
         developers.add(firstUser);
-        developers.add(secondUser);
+        testers.add(secondUser);
 
         System.out.println(firm);
     }
 
 }
+

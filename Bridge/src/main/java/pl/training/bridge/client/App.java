@@ -8,7 +8,7 @@ import pl.training.bridge.implementation.MyStack;
 public class App {
 
 	public static void main(String[] args) {
-		StackAbstraction<Integer> stackAbstraction = new StackAbstraction<>(new DefaultStack<>());
+		StackAbstraction<Integer> stackAbstraction = new HanoiStack(new DefaultStack<>());
 	    //----------------------------------------------------------------------------------------
 			stackAbstraction.add(5);
 			stackAbstraction.add(3);

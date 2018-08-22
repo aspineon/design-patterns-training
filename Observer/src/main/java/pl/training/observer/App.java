@@ -4,7 +4,8 @@ public class App {
 
     public static void main(String[] args) {
         MessageEmitter messageEmitter = new MessageEmitter();
-        messageEmitter.attach(message -> System.out.println(message));
+       // messageEmitter.attach(System.out::println);
+       // messageEmitter.attach(System.out::println);
 
         messageEmitter.emit("Hello there!");
     }

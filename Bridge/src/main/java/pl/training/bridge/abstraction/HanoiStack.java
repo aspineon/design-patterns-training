@@ -16,7 +16,7 @@ public class HanoiStack extends StackAbstraction<Integer> {
 
 	@Override
 	public void add(Integer item) {
-		if (stack.empty() || item.intValue() < stack.peek().intValue()) {
+		if (stack.empty() || item < stack.peek()) {
 			stack.push(item);
 		} else {
 			totalRejectedValues++;
