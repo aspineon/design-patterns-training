@@ -7,7 +7,7 @@ import pl.training.builder.MySQLDatabaseUrlBuilder;
 public class App {
 
     public static void main(String[] args) {
-        DatabaseUrlBuilder databaseUrlBuilder = new GenericDatabaseUrlBuilder()
+        DatabaseUrlBuilder databaseUrlBuilder = new MySQLDatabaseUrlBuilder()
                 .host("localhost")
                 .protocol("postgre")
                 .databaseName("Test");

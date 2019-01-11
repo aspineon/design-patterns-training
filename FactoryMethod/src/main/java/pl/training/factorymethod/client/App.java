@@ -8,7 +8,7 @@ import pl.training.factorymethod.LoggerFactory;
 public class App {
 
     public static void main(String[] args) throws Exception {
-        LoggerFactory loggerFactory = new ConsoleLoggerFactory();
+        LoggerFactory loggerFactory = new FileLoggerFactory();
         //-------------------------------------------------------
         try (Logger logger = loggerFactory.create()) {
             logger.log("Test entry");
